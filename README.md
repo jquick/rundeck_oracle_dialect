@@ -9,3 +9,6 @@ edit rundeck-config.properties change/add dialect to:
 `dataSource.dialect = com.rundeck.hibernate.RundeckOracleDialect`
 
 start up!
+
+
+All credit to @ikogan
