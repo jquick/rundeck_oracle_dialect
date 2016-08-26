@@ -10,16 +10,19 @@ import java.sql.Types;
  */
 public class RundeckOracleDialect extends Oracle10gDialect {
     protected void registerLargeObjectTypeMappings() {
-        registerColumnType( Types.BINARY, 2000, "raw($l)" );
-        registerColumnType( Types.BINARY, "long raw" );
-
-        registerColumnType( Types.VARBINARY, 2000, "raw($l)" );
-        registerColumnType( Types.VARBINARY, "long raw" );
-
         registerColumnType( Types.BLOB, "blob" );
         registerColumnType( Types.CLOB, "clob" );
 
-        registerColumnType( Types.LONGVARCHAR, "clob" );
-        registerColumnType( Types.LONGVARBINARY, "long raw" );
+        registerColumnType( Types.BINARY, 2000, "raw($l)" );
+        registerColumnType( Types.BINARY, "blob" );
+
+	registerColumnType( Types.VARBINARY, 2000, "raw($l)" );
+	registerColumnType( Types.VARBINARY, "blob" );
+
+	registerColumnType( Types.LONGVARCHAR, "clob" );
+	registerColumnType( Types.LONGVARBINARY, "blob" );
+
+	registerColumnType( Types.VARCHAR, 4000, "varchar2($l char)" );
+	registerColumnType( Types.VARCHAR, "clob" );
     }
 }
