@@ -4,6 +4,10 @@ This alternate oracle dialect is to tell the oracle driver to use updated (clob/
 copy jar file to:
 
 `/var/lib/rundeck/exp/webapp/WEB-INF/lib`
+```
+cd /var/lib/rundeck/exp/webapp/WEB-INF/lib
+wget https://github.com/jquick/rundeck_oracle_dialect/blob/master/rundeck-oracle-dialect.jar
+```
 
 edit rundeck-config.properties change/add dialect to:
 
