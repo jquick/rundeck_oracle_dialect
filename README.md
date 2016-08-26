@@ -1,6 +1,6 @@
 copy jar file to:
 
-`/var/lib/rundeck/exp/webapp/WEB-INF/`
+`/var/lib/rundeck/exp/webapp/WEB-INF/lib`
 
 edit rundeck-config.properties change/add dialect to:
 
