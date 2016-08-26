@@ -1,3 +1,5 @@
+This alternate oracle dialect is to tell the oracle driver to use updated (clob/blob/etc) instead of the deprecated long. This should allow rundeck to startup and create all tables without issues. Tested on Oracle12c.
+
 copy jar file to:
 
 `/var/lib/rundeck/exp/webapp/WEB-INF/lib`
